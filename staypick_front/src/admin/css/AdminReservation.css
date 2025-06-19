@@ -1,0 +1,153 @@
+.admin-page {
+  padding: 24px;
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* 좌우 레이아웃 */
+.reservation-wrapper {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.reservation-left {
+  flex: 2;
+}
+
+.reservation-right {
+  flex: 1;
+  min-width: 320px;
+  max-width: 400px;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
+
+/* 상단 검색바 */
+.reservation-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.reservation-search-bar input[type="text"],
+.reservation-search-bar input[type="date"] {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.reservation-search-bar button {
+  padding: 6px 16px;
+  background-color: #2e3b4e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 상태 필터 탭 */
+.reservation-status-filter {
+  margin-bottom: 16px;
+}
+
+.reservation-status-filter button {
+  padding: 6px 14px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  background-color: #f4f7fb;
+  color: #2e3b4e;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.reservation-status-filter button.active,
+.reservation-status-filter button:hover {
+  background-color: #dce9f9;
+  border-color: #aec8e4;
+  font-weight: 600;
+}
+
+/* 예약 테이블 */
+.reservation-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.reservation-table-bar{
+  cursor: pointer;
+}
+
+.reservation-table-bar:hover{
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.reservation-table th,
+.reservation-table td {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.reservation-table th {
+  background-color: #f5f7fa;
+  color: #2f3f50;
+}
+
+.reservation-table tbody tr:nth-child(even) {
+  background-color: #f9fbfd;
+}
+
+/* 페이지네이션 */
+.pagination {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pagination button.active {
+  background-color: #2f3f50;
+  color: white;
+  font-weight: bold;
+}
+
+/* 상태 배지 */
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+}
+
+.status.confirmed {
+  background-color: #4caf50;
+}
+.status.cancelled {
+  background-color: #f44336;
+}
+.status.checkedin {
+  background-color: #2196f3;
+}
+.status.past{
+  background-color: rgb(255, 187, 0);
+}

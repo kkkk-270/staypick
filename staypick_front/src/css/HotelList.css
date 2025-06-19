@@ -1,0 +1,29 @@
+.hotel-list-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #fafafa;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.page-title h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+.hotel-results {
+  margin-top: 24px;
+}
+.region-modal .modal-body{
+  flex-direction: row !important;
+}
+
+.pagination{
+  margin-bottom: 50px;
+}

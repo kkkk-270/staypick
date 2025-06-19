@@ -1,0 +1,72 @@
+/* 페이지 전체 레이아웃과 footer 고정을 위한 기본 설정 (App.css나 index.css에도 필요) */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 실제 Footer 스타일 */
+.footer {
+  background-color: #339cff;
+  color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: auto; /* 🟡 flex layout에서 하단 고정 역할 */
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.footer-section {
+  flex: 1 1 22%;
+  min-width: 200px;
+  margin-bottom: 0.1rem;
+}
+
+.footer-section h2 {
+  margin-top: 10px;
+  margin-bottom: 1.2rem;
+}
+
+.footer-section h5 {
+  margin-top: 14px;
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.footer-section p {
+  margin-bottom: 0.8rem;
+}
+
+.footer-section a {
+  display: block;
+  color: #eee;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  background-color: #339cff;
+  margin-top: 20px;
+  padding-bottom: 8px;
+}

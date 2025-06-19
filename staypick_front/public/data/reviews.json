@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "hotelId": 1,
+    "roomId": 1,
+    "rating": 5,
+    "content": "청결하고 서비스가 훌륭했어요! 방도 너무 이쁘고 두명이 쓰기에 전혀 부족함 없었어요 프론트 직원분들도 너무 친절해서 정말 기분좋게 여행 다녀왔습니다. 다음에도 꼭 이용할 예정이에요!",
+    "img": "image1.png",
+    "date": "2024.04.16"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "hotelId": 1,
+    "roomId": 1,
+    "rating": 4,
+    "content": "위치가 정말 좋아요. 다시 방문할 의향 있습니다.",
+    "img": "",
+    "date": "2024.04.12"
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "hotelId": 1,
+    "roomId": 1,
+    "rating": 5,
+    "content": "조식도 맛있고 전반적으로 만족스러움!",
+    "img": "",
+    "date": "2024.04.10"
+  },
+  {
+    "id": 4,
+    "userId": 4,
+    "hotelId": 2,
+    "roomId": 1,
+    "rating": 4,
+    "content": "뷰가 끝내줘요! 친구랑 또 올 거예요.",
+    "img": "",
+    "date": "2024.03.20"
+  },
+  {
+    "id": 5,
+    "userId": 1,
+    "hotelId": 2,
+    "roomId": 1,
+    "rating": 3,
+    "content": "전반적으로 괜찮지만 방음이 아쉬웠어요.",
+    "img": "",
+    "date": "2024.03.18"
+  },
+  {
+    "id": 6,
+    "userId": 2,
+    "hotelId": 3,
+    "roomId": 1,
+    "rating": 5,
+    "content": "직원분들이 너무 친절하고 위치도 최고예요.",
+    "img": "",
+    "date": "2024.04.01"
+  }
+]

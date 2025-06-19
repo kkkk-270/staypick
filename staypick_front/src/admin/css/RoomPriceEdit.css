@@ -1,0 +1,147 @@
+.room-rate-page {
+  width: 100%;
+  max-width: 100%;
+  padding: 24px 40px;
+  box-sizing: border-box;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.room-rate-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2b2b2b;
+}
+
+/* 필터 바 */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 180px;
+}
+
+/* 컨테이너: 테이블 + 패널 정렬 */
+.room-rate-container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* 좌측 객실 리스트 테이블 */
+.room-rate-table {
+  flex: 2;
+}
+
+.room-rate-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.room-rate-table th,
+.room-rate-table td {
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.room-rate-table th {
+  background-color: #f3f6fa;
+  color: #333;
+}
+
+.room-rate-table tbody tr:nth-child(even) {
+  background-color: #fafbfd;
+}
+
+.room-rate-table button {
+  padding: 6px 12px;
+  background-color: #4f84ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.room-rate-table button:hover {
+  background-color: #3e6dd8;
+}
+
+/* 우측 수정 패널 */
+.edit-panel {
+  flex: 1;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 280px;
+}
+
+.edit-panel h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.edit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.edit-row label {
+  font-weight: 500;
+  flex: 0 0 100px;
+}
+
+.edit-row input {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: right;
+}
+
+/* 하단 버튼 */
+.edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.edit-actions button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-actions button:first-child {
+  background-color: #23b26d;
+  color: white;
+}
+
+.edit-actions button:first-child:hover {
+  background-color: #1c9a5a;
+}
+
+.edit-actions button:last-child {
+  background-color: #ddd;
+}
+
+.edit-actions button:last-child:hover {
+  background-color: #ccc;
+}

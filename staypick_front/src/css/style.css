@@ -1,0 +1,111 @@
+main {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto; /* 브라우저 중앙 정렬 */
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;  /* ✅ 좌우 정렬 */
+  align-items: center;
+  gap: 80px;
+  width: 100%; /* ✅ main 영역 꽉 채움 */
+}
+
+.left-section {
+  flex: 1;
+  min-width: 600px;
+}
+
+.left-section h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.left-section p {
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.left-section button {
+  padding: 18px 0;
+  width: 100%;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.right-section {
+  flex: 1;
+  min-width: 500px;
+  text-align: center;
+}
+
+.right-section img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+}
+
+  /* 🧩 디버깅용 레이아웃 시각화 */
+
+.main-wrapper {
+  background: rgba(0, 0, 0, 0.02); /* 전체 감싸는 부분 */
+  outline: 2px dashed #999;
+}
+
+.main-content {
+  background: rgba(255, 0, 0, 0.05); /* 좌우 구조 잡는 부분 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  padding: 40px 0;
+}
+
+.left-section {
+  background: rgba(0, 255, 0, 0.05);
+  outline: 1px solid lime;
+}
+
+.right-section {
+  background: rgba(0, 0, 255, 0.05);
+  outline: 1px solid blue;
+}
+
+.right-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px dashed blue;
+}
+
+button {
+  border: 2px solid orange;
+}
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  .left-section,
+  .right-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .left-section button {
+    width: 100%;
+  }
+
+
+
+}
+

@@ -1,0 +1,71 @@
+/* ================================
+   CloseOpenGrid.css (최종 정리)
+   ================================ */
+
+.grid-wrapper {
+  overflow-x: auto;
+  margin-top: 8px;
+}
+
+.closeopen-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.closeopen-grid th,
+.closeopen-grid td {
+  border: 1px solid #e1e5ea;
+  padding: 10px 12px;
+  min-width: 90px;
+}
+
+.closeopen-grid th {
+  background-color: #f5f7fa;
+  font-weight: 600;
+  color: #374957;
+}
+
+.room-name {
+  font-weight: 500;
+  background-color: #f9fafb;
+}
+
+/* 상태별 셀 색상 */
+.cell {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cell.예약-가능 {
+  background-color: #e8f5e9;
+  color: #256029;
+}
+
+.cell.예약됨 {
+  background-color: #fff8e1;
+  color: #8a6d1d;
+}
+
+.cell.체크인-완료 {
+  background-color: #e0f7fa;
+  color: #006064;
+}
+
+.cell.운영중단 {
+  background-color: #fdecea;
+  color: #c62828;
+}
+
+.cell:hover {
+  outline: 2px solid #aaa;
+  z-index: 1;
+  background-color: #eaeaea;
+}

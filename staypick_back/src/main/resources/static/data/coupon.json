@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "리뷰작성 7,000원 할인쿠폰",
+        "expiration": "2025.06.31",
+        "discount": "7000",
+        "discountType": "fixed"
+    },
+    {
+        "id": 2,
+        "name": "첫 예약 15% 할인쿠폰",
+        "expiration": "2025.05.31",
+        "discount": "15",
+        "discountType": "percentage"
+    },
+    {
+        "id": 3,
+        "name": "첫 예약 10% 할인쿠폰",
+        "expiration": "2025.06.15",
+        "discount": "10",
+        "discountType": "percentage"
+    }
+]

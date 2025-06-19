@@ -1,0 +1,87 @@
+input:focus { outline:none; }
+
+.loginPage{
+  text-align: center;
+}
+.loginPage h1{
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight: 700;
+}
+.loginPage p{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.loginPage input{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 50px;
+  font-size: 18px;
+  text-indent:20px;
+  border: 2px solid #ddd;
+}
+.loginPage button{
+  width: 500px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+}
+.signUp-info{
+  display: flex;
+  justify-content: center;
+}
+.signUp-btn{
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.social div{
+  display: inline-block;
+}
+.social button{
+  display: block;
+  margin: 10px auto;
+  position: relative;
+  font-weight: 700;
+}
+.google-icon,
+.kakao-icon,
+.naver-btn>img{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.login-btn{
+  background-color: #5c5c5c;
+  color: #fff;
+  font-weight: 700;
+}
+.google-btn{
+  background-color: #eb4034;
+  color: #fff;
+}
+.kakao-btn{
+  background-color: #FEE500;
+}
+.google-icon,
+.kakao-icon{
+  font-size: 40px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.naver-btn{
+  background-color: #03C75A;
+  color: #fff;
+}
+.naver-btn>img{
+  margin: 0;
+  padding: 0;
+  height: 50px ;
+}

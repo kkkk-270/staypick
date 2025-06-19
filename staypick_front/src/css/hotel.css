@@ -1,0 +1,153 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 48px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  border-bottom: 1px solid #ddd;
+}
+.nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 32px 0 24px;
+}
+.filter-bar input,
+.filter-bar button,
+.filter-bar .date-range {
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0 16px;
+  font-size: 14px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.filter-bar .blue-button {
+  background: #007bff;
+  color: white;
+  border: none;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card-top {
+  display: flex;
+  gap: 20px;
+}
+.thumbnail {
+  flex-shrink: 0;
+}
+.thumbnail img {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.card-info {
+  flex-grow: 1;
+}
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.card-title h2 {
+  font-size: 18px;
+  margin: 0;
+}
+.heart-icon {
+  font-size: 20px;
+  color: #ff5a5f;
+  cursor: pointer;
+}
+.location {
+  font-size: 14px;
+  color: #777;
+  margin: 6px 0;
+}
+.price {
+  font-size: 16px;
+  font-weight: bold;
+}
+.review-box {
+  background: #f9f9f9;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.review-items {
+  display: flex;
+  gap: 8px;
+}
+.review-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 10px;
+  flex: 1;
+  font-size: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 72px;
+}
+.review-item .stars {
+  color: #ffcc00;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.review-item .date {
+  color: #aaa;
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+.review-footer {
+  text-align: right;
+  margin-top: 10px;
+}
+.review-footer a {
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+}

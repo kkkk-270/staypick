@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "username": "hong1234",
+    "email": "hong@staypick.com",
+    "password": "1234",
+    "name": "홍길동",
+    "phone": "01012345678"
+  },
+  {
+    "id": 2,
+    "username": "kim5678",
+    "email": "kim@staypick.com",
+    "password": "abcd",
+    "name": "김민수",
+    "phone": "01098765432"
+  }
+]

@@ -1,0 +1,83 @@
+.admin-info-page.full-width {
+  width: 100%;
+  max-width: 100%;
+  padding: 24px 40px;
+  box-sizing: border-box;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.admin-info-page.full-width > h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #2b2b2b;
+}
+
+.admin-info-page>.panel-box{
+  width: 65%;
+}
+
+.admin-info-page>.panel-box>.panel-header{
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: start !important;
+}
+
+.admin-info-page .grid-wrapper{
+  width: 75%;
+}
+
+.admin-info-page .room-info-wrapper{
+  width: 75%;
+}
+
+.admin-info-page .room-info-wrapper button{
+  float: right;
+  border: none;
+  border-radius: 10px;
+  color: #1976d2;
+  font-weight: 700;
+}
+
+.admin-info-page input{
+  width: 100%;
+}
+
+.admin-info-page input:first-child{
+  width: 87%;
+}
+
+.admin-info-page textarea{
+  width: 100%;
+}
+
+.admin-info-title {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.admin-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.admin-info-table>th,
+.admin-info-table>td {
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.admin-info-table>th {
+  background-color: #f0f3f9;
+  color: #333;
+}
+
+.admin-info-table>tbody>tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.room-info-subtitle{
+  width: 130px;
+}

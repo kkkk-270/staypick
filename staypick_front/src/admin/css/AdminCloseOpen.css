@@ -1,0 +1,142 @@
+/* ================================
+   AdminCloseOpen.css (전체 레이아웃 리디자인)
+   ================================ */
+
+.closeopen-page {
+  padding: 24px;
+  font-family: 'Pretendard', sans-serif;
+  background-color: #f7f9fb;
+}
+
+/* 패널 박스 전체 */
+.panel-box {
+  background: white;
+  border: 1px solid #dce1e7;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  margin-bottom: 20px;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.panel-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2f3e50;
+}
+
+.panel-meta {
+  font-size: 14px;
+  color: #666;
+}
+
+.panel-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.panel-controls button {
+  padding: 6px 12px;
+  background-color: #f0f2f5;
+  border: 1px solid #c3cbd5;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.calendar-input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* 필터 탭 */
+.category-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.category-btn {
+  padding: 6px 12px;
+  background-color: #f4f6f9;
+  border: 1px solid #cfd6de;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #333;
+}
+
+.category-btn.active {
+  background-color: #2f7bdb;
+  color: #fff;
+  border-color: #2f7bdb;
+}
+.room-search-input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  min-width: 140px;
+}
+
+/* 객실 카드형 */
+.room-section {
+  background: white;
+  border: 1px solid #e0e6ed;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.room-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.room-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2f3e50;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.panel-filterbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.panel-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}

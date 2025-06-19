@@ -1,0 +1,86 @@
+
+.hotel-card {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin: 24px auto;
+  background-color: #fff;
+  font-family: 'Pretendard', sans-serif;
+  max-width: 1320px;
+}
+
+.hotel-card-inner {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.hotel-card-image img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hotel-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-top .hotel-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.hotel-location,
+.hotel-category {
+  font-size: 14px;
+  color: #555;
+  margin: 2px 0;
+  display: flex;
+  align-items: center;
+}
+
+.info-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.hotel-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.reserve-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.review-slider-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px; /* 좌우 여백 살짝 */
+}
+.review-summary {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.review-summary .star-icon {
+  color: gold;
+  margin-right: 4px;
+}

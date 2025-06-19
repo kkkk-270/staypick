@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "경주 보문단지 한옥별당",
+    "location": "경주 보문단지",
+    "category": "호텔",
+    "price": 246495,
+    "image": "image1.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "054-123-4567"
+  },
+  {
+    "id": 2,
+    "name": "제주 서귀포 프리미엄",
+    "location": "제주 서귀포",
+    "category": "게스트하우스",
+    "price": 152218,
+    "image": "image2.png",
+    "detaillocation": "제주특별자치도 제주시 구좌읍 한동리 2005",
+    "tel": "064-234-5678"
+  },
+  {
+    "id": 3,
+    "name": "서울 종로 산들바람",
+    "location": "서울 종로",
+    "category": "호텔",
+    "price": 284921,
+    "image": "image3.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "02-3456-7890"
+  },
+  {
+    "id": 4,
+    "name": "서울 종로 한옥별당",
+    "location": "서울 종로",
+    "category": "호텔",
+    "price": 282236,
+    "image": "image4.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "02-4567-8901"
+  },
+  {
+    "id": 5,
+    "name": "부산 해운대 산들바람",
+    "location": "부산 해운대",
+    "category": "호텔",
+    "price": 73264,
+    "image": "image5.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "051-567-1234"
+  },
+  {
+    "id": 6,
+    "name": "부산 해운대 라온",
+    "location": "부산 해운대",
+    "category": "호텔",
+    "price": 128683,
+    "image": "image6.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "051-678-2345"
+  },
+  {
+    "id": 7,
+    "name": "강릉 안목항 블루오션",
+    "location": "강릉 안목항",
+    "category": "호텔",
+    "price": 244755,
+    "image": "image7.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "033-789-3456"
+  },
+  {
+    "id": 8,
+    "name": "제주 서귀포 모던하우스",
+    "location": "제주 서귀포",
+    "category": "펜션",
+    "price": 244554,
+    "image": "image8.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "064-890-4567"
+  },
+  {
+    "id": 9,
+    "name": "제주 서귀포 라온",
+    "location": "제주 서귀포",
+    "category": "호텔",
+    "price": 126029,
+    "image": "image9.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "064-901-5678"
+  },
+  {
+    "id": 10,
+    "name": "강릉 안목항 쉼표",
+    "location": "강릉 안목항",
+    "category": "게스트하우스",
+    "price": 235340,
+    "image": "image10.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "033-234-6789"
+  },
+  {
+    "id": 11,
+    "name": "서울 강남 쉼표",
+    "location": "서울 강남",
+    "category": "호텔",
+    "price": 240742,
+    "image": "image11.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "02-5678-1234"
+  },
+  {
+    "id": 12,
+    "name": "제주 서귀포 바다향기",
+    "location": "제주 서귀포",
+    "category": "펜션",
+    "price": 197288,
+    "image": "image12.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "064-678-2345"
+  },
+  {
+    "id": 13,
+    "name": "서울 종로 프리미엄",
+    "location": "서울 종로",
+    "category": "호텔",
+    "price": 289232,
+    "image": "image13.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "02-6789-3456"
+  },
+  {
+    "id": 14,
+    "name": "인천 송도 한옥별당",
+    "location": "인천 송도",
+    "category": "호텔",
+    "price": 99498,
+    "image": "image14.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "032-789-4567"
+  },
+  {
+    "id": 15,
+    "name": "강릉 안목항 프리미엄",
+    "location": "강릉 안목항",
+    "category": "펜션",
+    "price": 87416,
+    "image": "image15.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "033-890-5678"
+  },
+  {
+    "id": 16,
+    "name": "부산 해운대 프리미엄",
+    "location": "부산 해운대",
+    "category": "펜션",
+    "price": 136553,
+    "image": "image16.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "051-901-6789"
+  },
+  {
+    "id": 17,
+    "name": "서울 강남 모던하우스",
+    "location": "서울 강남",
+    "category": "게스트하우스",
+    "price": 191104,
+    "image": "image17.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "02-7890-1234"
+  },
+  {
+    "id": 18,
+    "name": "경주 보문단지 힐튼",
+    "location": "경주 보문단지",
+    "category": "호텔",
+    "price": 293348,
+    "image": "image18.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "054-234-5678"
+  },
+  {
+    "id": 19,
+    "name": "서울 강남 라온",
+    "location": "서울 강남",
+    "category": "호텔",
+    "price": 208954,
+    "image": "image19.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "02-8901-2345"
+  },
+  {
+    "id": 20,
+    "name": "부산 해운대 쉼표",
+    "location": "부산 해운대",
+    "category": "호텔",
+    "price": 78451,
+    "image": "image20.png",
+    "detaillocation": "경북 경주시 탑동 20-2",
+    "tel": "051-234-5678"
+  }
+]

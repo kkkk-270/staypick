@@ -1,0 +1,115 @@
+.review-container {
+  max-width: 900px;
+  margin: 20px;
+ 
+}
+
+.review-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.review-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 24px;
+  background: #fff;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.hotel-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hotel-sub {
+  font-size: 14px;
+  color: #666;
+}
+
+.hotel-dates {
+  font-size: 13px;
+  color: #888;
+}
+
+.review-meta {
+  text-align: right;
+}
+
+.review-date {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.delete-btn {
+  background: #ff5f5f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.star-rating {
+  margin: 8px 0;
+}
+
+.star-icon {
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+.review-content {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.review-image-group {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.main-review-image,
+.sub-review-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.sub-review-image-wrapper {
+  position: relative;
+}
+
+.sub-review-image {
+  filter: brightness(0.4);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.4);
+}

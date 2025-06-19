@@ -1,0 +1,319 @@
+
+input:focus { outline: none; }
+select:focus { outline: none; }
+
+
+.signUpPage {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.signUpPage h1 {
+  margin: 20px 0 60px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.register-steps {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.register-steps .step {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    font-weight: bold;
+    color: #999;
+}
+
+.register-steps .step.active {
+    color: #000;
+    border-bottom: 3px solid #007bff;
+}
+
+.terms-box {
+  margin-left: 400px;
+  margin-right: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  margin-bottom: 16px;
+  text-align: start !important;
+}
+
+.terms-section {
+  padding: 20px 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 24px;
+}
+
+.terms-section h2{
+  margin-bottom: 10px;
+}
+
+.terms-content {
+  margin-bottom: 24px;
+}
+
+.terms-content h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.terms-content p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  white-space: pre-line; /* 줄바꿈 유지 */
+}
+
+/* 스크롤 박스 */
+.scroll-box {
+  border: 1px solid #ddd;
+  background: white;
+  height: 300px;
+  padding: 20px 15px;
+  overflow-y: auto;
+  white-space: pre-line;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.agree-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  user-select: none;
+  margin-top: 4px;
+}
+
+.agree-checkbox input {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.all-agree {
+  margin-top: 12px;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  padding-top: 12px;
+}
+
+.agree-btn {
+  width: 600px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.agree-btn:hover {
+  background-color: #0056b3;
+}
+
+.register-select-buttons {
+  margin-bottom: 10px;
+}
+
+.select-btn {
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 495px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6C63FF, #52c7b8);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.select-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+  .signUpPage h1 {
+    font-size: 1.5rem;
+  }
+
+  .select-btn {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+}
+
+.signUpPage-box {
+  width: 600px;
+  padding: 15px 15px 15px 50px;
+  margin: 0 auto;
+  text-align: start;
+  position: relative;
+}
+
+.signUpPage-box input {
+  display: block;
+  margin-bottom: 8px;
+  width: 500px;
+  height: 45px;
+  font-size: 15px;
+  text-indent: 15px;
+  border: 2px solid #ddd;
+}
+
+.signUpTitle { font-weight: 600; }
+
+.error-message {
+  margin-left: 10px;
+  font-size: 13px;
+  color: red;
+}
+
+.idCheck-btn {
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  top: 44px;
+  right: 55px;
+  border: none;
+  background-color: #339cff;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.signUp-Check-btn {
+  width: 495px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  background-color: #339cff;
+  color: #fff;
+  margin-top: 50px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reselect-Check-btn {
+  width: 495px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  background-color: #a7a7a7;
+  color: #fff;
+  margin-top: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+.birth-box {
+  display: flex;
+  width: 93.5%;
+}
+
+.birth-box > input { width: 143px !important; }
+
+.birth-box select {
+  width: 300px;
+  height: 45px;
+  font-size: 15px;
+  text-indent: 15px;
+  border: 2px solid #ddd;
+}
+
+.social div{
+  display: inline-block;
+}
+
+.social button{
+  display: block;
+  margin: 10px auto;
+  position: relative;
+  font-weight: 700;
+  width: 500px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+}
+
+.google-icon,
+.kakao-icon,
+.naver-btn>img{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.kakao-btn{
+  background-color: #FEE500;
+}
+.google-icon,
+.kakao-icon{
+  font-size: 40px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.naver-btn{
+  background-color: #03C75A;
+  color: #fff;
+}
+.naver-btn>img{
+  margin: 0;
+  padding: 0;
+  height: 50px ;
+}
+
+
+.social-signUp-box { 
+  text-align: center; 
+}
+
+.sns-label {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-right: 35px;
+}
+
+.step.complete.active {
+  color: #333;                /* 흰색 글자 */
+  padding: 20px 30px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  max-width: 500px;
+  margin: 20px auto;
+  user-select: none;
+}
+
+.step.complete.active .btn-home {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #339cff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.step.complete.active .btn-home:hover {
+  background-color: #1b75c9;
+}

@@ -1,0 +1,387 @@
+@import url(../index.css);
+.row>* {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.gray-bg{
+    background-color: #f8f8f8;
+}
+.rectangle {
+  width: 1000px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.text-wrapper-2 {
+  font-weight: 700;
+  color: #000000;
+  font-size: 38px;
+  letter-spacing: 0;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.rectangle-2 {
+  margin-left: 120px;
+  width: 747px;
+  height: 70px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+.rectangle-2 span{
+  cursor: pointer;
+}
+.count {
+  padding-left: 100px;
+  margin-top:-20px;
+  padding-bottom: 20px;
+}
+.rectangle-2 p{
+  padding-top: 18px;
+  padding-left: 20px;
+  font-weight: 400;
+  color: #666;
+  font-size: 20px;
+}
+.rectangle-2 p svg{
+  float: right;
+  margin-right: 20px;
+  font-size: 24px;
+}
+.timebox{
+  padding-left: 136px;
+}
+.checkin, .checkout{
+  width: 440px;
+}
+.checkin-name {
+  height: 30px;
+  font-weight: 600;
+  color: #000000;
+  font-size: 19px;
+  line-height: 50px;
+}
+.checkin-date {
+  height: 30px;
+  font-weight: 500;
+  color: #000000;
+  font-size: 22px;
+  line-height: 50px;
+}
+.checkin-time {
+  height: 30px;
+  top: 602px;
+  left: 580px;
+  font-weight: 500;
+  color: #000000;
+  font-size: 17px;
+  line-height: 50px;
+}
+.checkout-name {
+  height: 30px;
+  font-weight: 600;
+  color: #000000;
+  font-size: 19px;
+  line-height: 50px;
+}
+.checkout-date {
+  height: 30px;
+  font-weight: 500;
+  color: #000000;
+  font-size: 22px;
+  line-height: 50px;
+}
+.checkout-time {
+  height: 30px;
+  font-weight: 500;
+  color: #000000;
+  font-size: 17px;
+  line-height: 50px;
+}
+.pricebox{
+  width: 100%;
+  padding-left: 136px;
+}
+.text-wrapper-14 {
+  margin-top: 35px;
+  font-weight: 400;
+  color: #000000;
+  font-size: 17px;
+  line-height: 50px;
+  width: 520px;
+}
+.text-wrapper-16 {
+  margin-top: 30px;
+  font-weight: 500;
+  color: #bbbdc0;
+  font-size: 21px;
+  line-height: 50px;
+}
+.element {
+  font-weight: 500;
+  color: #000000;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+
+.checkblock{
+  padding-left: 37px;
+  padding-top: 24px;
+}
+.checkblock .form-check-input{
+  cursor: pointer;
+}
+.inputcheckcircle {
+    appearance: none;
+    box-sizing: border-box;
+    background-clip: content-box;
+    padding: 0.25em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #ddd;
+    border: 1px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.inputcheckcircle:checked {
+    border-color: var(--blue);
+    background-color: var(--blue);
+}
+.checktextbox{
+    margin-right: 40px;
+}
+.checktext{
+  margin-left: 10px;
+}
+.text-primary{
+  float: right;
+  text-decoration: none;
+  font-weight: 600;
+  padding-right: 30px;
+}
+.rectangle-2 a:hover{
+  color: var(--blue) !important;
+  text-decoration: none;
+}
+.sameinfo{
+  padding-left: 120px;
+  font-size: 20px;
+}
+.sameinfo input[type="checkbox"]{
+  padding-top: 10px;
+  cursor: pointer;
+}
+.sameinfo span{
+  padding-left: 10px;
+}
+.userinfo{
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 18px;
+  padding-bottom: 10px;
+}
+.text-wrapper-34 {
+  font-weight: 500;
+  color: #4f5051;
+  font-size: 23px;
+  line-height: 50px;
+}
+.text-wrapper-36 {
+  font-weight: 400;
+  color: #000000;
+  font-size: 27px;
+  line-height: 50px;
+}
+.rectangle-4 {
+  position: relative;
+  width: 744px;
+  height: 59px;
+  border-radius: 19px;
+  border: 1px solid;
+  border-color: #bbbdc0;
+  margin-left: 120px;
+  margin-top: 10px;
+  z-index: 2;
+  background-color: #fff;
+}
+.text-wrapper-3 {
+  font-weight: 500;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  padding-left: 120px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.visit-method-box {
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+.checkblock {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top:0px
+}
+.rectangle-3 {
+  width: 744px;
+  height: 77px;
+  border-radius: 19px;
+  border: 1px solid #bbbdc0;
+  margin-left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  background-color: #fff;
+}
+.text-wrapper-13 {
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  line-height: 50px;
+}
+.rectangle-4 span{
+  padding-left: 10px;
+  font-weight: 400;
+  color: #4f5051;
+  font-size: 20px;
+  line-height: 50px;
+}
+.couponbox{
+  position: relative;
+}
+.circle3{
+  position: absolute;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 1px solid #999;
+  border-radius: 50%;
+  top: 14px;
+  left: 23px;
+  z-index: 2;
+}
+.mycoupon{
+  font-weight: 600 !important;
+  cursor: pointer;
+  margin-left: 470px;
+}
+.coupon-dropdown {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out; /* 높이 변화에 0.3초의 ease-in-out 트랜지션 적용 */
+}
+
+.coupon-dropdown.open {
+  height: auto; /* 또는 원하는 고정 높이 값 */
+}
+
+/* couponbox 스타일은 그대로 유지 */
+.couponbox {
+  /* 기존 스타일 */
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.div {
+  width: 744px;
+  height: 200px;
+  margin-left: 120px;
+  border-bottom: 1px solid #bbbdc0;
+  border-left: 1px solid #bbbdc0;
+  border-right: 1px solid #bbbdc0;
+  border-radius: 19px;
+  padding: 20px 35px;
+  z-index: 1;
+  overflow-y: auto;
+}
+.couponinfo{
+  display: inline-block;
+}
+.text-wrapper-39 {
+  font-weight: 700;
+  color: #4f5051;
+  font-size: 20px;
+  line-height: normal;
+}
+.text-wrapper-41 {
+  padding-top: 3px;
+  font-weight: 700;
+  color: #999;
+  font-size: 14px;
+  line-height: normal;
+}
+.couponbox button{
+  float: right;
+}
+.text-wrapper-6 {
+  font-weight: 700;
+  color: #000000;
+  font-size: 29px;
+  line-height: 50px;
+  padding-left: 120px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+.text-wrapper-28 {
+  font-weight: 400;
+  color: #000000;
+  font-size: 22px;
+  line-height: 50px;
+  padding-left: 120px;
+}
+.text-wrapper-28 span{
+  float: right;
+  padding-right: 140px;
+}
+.price span{
+  float:right;
+  padding-right: 140px;
+}
+.modal-body{
+  flex-direction: column;
+}
+.guest-count-box {
+  padding-left: 120px;
+  padding-bottom: 20px;
+}
+
+.guest-count-controller {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+ 
+  width: fit-content;
+  padding: 8px 20px;
+  margin-right: 15px;
+  background-color: #fff;
+}
+
+.guest-count-controller button {
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.guest-count-controller button:hover {
+  background-color: #f0f0f0;
+}
+
+.guest-count-number {
+  font-weight: 600;
+  font-size: 25px;
+  color: #000;
+  width: auto;
+}

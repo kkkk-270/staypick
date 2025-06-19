@@ -1,0 +1,160 @@
+.review-detail-container {
+  font-family: 'Pretendard', sans-serif;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.review-detail-header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.review-detail-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f94ea;
+}
+
+.review-detail-main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.review-detail-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.review-detail-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+
+.review-detail-meta {
+  font-size: 15px;
+  color: #777;
+}
+
+.review-detail-filter {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.review-detail-filter select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.review-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.review-detail-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.review-detail-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.review-detail-star-icon {
+  color: #ffc107;
+  font-size: 20px;
+}
+
+.review-detail-date {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.review-detail-text {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* 이미지 그룹 */
+.review-image-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* 대표 이미지 */
+.main-review-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 그 외 이미지 */
+.sub-review-image-wrapper {
+  position: relative;
+}
+
+.sub-review-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0.5;
+}
+
+/* 오버레이 */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 돌아가기 버튼 */
+.review-detail-back-link {
+  margin: 40px auto 0;
+  display: inline-flex;
+  align-items: center;
+  background-color: #1f94ea;
+  color: white;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.review-detail-back-link:hover {
+  background-color: #187bd1;
+}
+
+.review-detail-arrow-icon {
+  margin-right: 6px;
+  font-size: 18px;
+}

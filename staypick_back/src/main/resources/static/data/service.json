@@ -1,0 +1,73 @@
+[
+    {
+        "hotelId": 1,
+        "services": [
+            {
+                "name": "편의점",
+                "image": "cs.png"
+            },
+            {
+                "name": "수영장",
+                "image": "pool.png"
+            },
+            {
+                "name": "피트니스",
+                "image": "fitness.png"
+            },
+            {
+                "name": "무선인터넷",
+                "image": "wifi.png"
+            },
+            {
+                "name": "무료 주차",
+                "image": "free_park.png"
+            }
+        ]
+    },
+    {
+        "hotelId": 2,
+        "services": [
+            {
+                "name": "피트니스",
+                "image": "fitness.png"
+            },
+            {
+                "name": "수영장",
+                "image": "pool.png"
+            },
+            {
+                "name": "미니바",
+                "image": "minibar.png"
+            },
+            {
+                "name": "사우나",
+                "image": "sauna.png"
+            },
+            {
+                "name": "무선인터넷",
+                "image": "wifi.png"
+            },
+            {
+                "name": "욕실용품",
+                "image": "sg.png"
+            }
+        ]
+    },
+    {
+        "hotelId": 3,
+        "services": [
+            {
+                "name": "피트니스",
+                "image": "fitness.png"
+            },
+            {
+                "name": "무선인터넷",
+                "image": "wifi.png"
+            },
+            {
+                "name": "욕실용품",
+                "image": "sg.png"
+            }
+        ]
+    }
+]

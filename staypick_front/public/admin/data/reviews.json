@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "guestName": "홍길동",
+    "roomName": "101호",
+    "content": "가격 대비 시설이 훌륭했어요.",
+    "date": "2025-05-11",
+    "rating": 3,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,1"
+  },
+  {
+    "id": 2,
+    "guestName": "허준",
+    "roomName": "201호",
+    "content": "정말 깨끗하고 편안했어요.",
+    "date": "2025-05-04",
+    "rating": 3,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,2"
+  },
+  {
+    "id": 3,
+    "guestName": "이순신",
+    "roomName": "401호",
+    "content": "직원들이 정말 친절해서 감동받았어요.",
+    "date": "2025-05-05",
+    "rating": 5,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,3"
+  },
+  {
+    "id": 4,
+    "guestName": "허준",
+    "roomName": "102호",
+    "content": "방이 생각보다 넓고 쾌적했어요.",
+    "date": "2025-05-06",
+    "rating": 4,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,4"
+  },
+  {
+    "id": 5,
+    "guestName": "홍길동",
+    "roomName": "202호",
+    "content": "체크인이 빨라서 좋았어요.",
+    "date": "2025-05-01",
+    "rating": 3,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,5"
+  },
+  {
+    "id": 6,
+    "guestName": "장영실",
+    "roomName": "301호",
+    "content": "체크인이 빨라서 좋았어요.",
+    "date": "2025-05-09",
+    "rating": 3,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,6"
+  },
+  {
+    "id": 7,
+    "guestName": "유관순",
+    "roomName": "401호",
+    "content": "조식이 맛있었고 위치도 좋아요.",
+    "date": "2025-05-05",
+    "rating": 4,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,7"
+  },
+  {
+    "id": 8,
+    "guestName": "이순신",
+    "roomName": "102호",
+    "content": "체크인이 빨라서 좋았어요.",
+    "date": "2025-05-02",
+    "rating": 3,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,8"
+  },
+  {
+    "id": 9,
+    "guestName": "유관순",
+    "roomName": "201호",
+    "content": "침구가 너무 청결해서 좋았어요.",
+    "date": "2025-05-11",
+    "rating": 3,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,9"
+  },
+  {
+    "id": 10,
+    "guestName": "이순신",
+    "roomName": "201호",
+    "content": "소음이 조금 있었지만 대체로 만족해요.",
+    "date": "2025-05-09",
+    "rating": 4,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,10"
+  },
+  {
+    "id": 11,
+    "guestName": "유관순",
+    "roomName": "202호",
+    "content": "정말 깨끗하고 편안했어요.",
+    "date": "2025-05-08",
+    "rating": 5,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,11"
+  },
+  {
+    "id": 12,
+    "guestName": "이순신",
+    "roomName": "301호",
+    "content": "다음에도 꼭 다시 이용하고 싶어요.",
+    "date": "2025-05-04",
+    "rating": 5,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,12"
+  },
+  {
+    "id": 13,
+    "guestName": "이순신",
+    "roomName": "202호",
+    "content": "직원들이 정말 친절해서 감동받았어요.",
+    "date": "2025-05-10",
+    "rating": 5,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,13"
+  },
+  {
+    "id": 14,
+    "guestName": "장영실",
+    "roomName": "202호",
+    "content": "체크인이 빨라서 좋았어요.",
+    "date": "2025-05-03",
+    "rating": 3,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,14"
+  },
+  {
+    "id": 15,
+    "guestName": "정약용",
+    "roomName": "102호",
+    "content": "직원들이 정말 친절해서 감동받았어요.",
+    "date": "2025-05-07",
+    "rating": 4,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,15"
+  },
+  {
+    "id": 16,
+    "guestName": "장영실",
+    "roomName": "101호",
+    "content": "방이 생각보다 넓고 쾌적했어요.",
+    "date": "2025-05-06",
+    "rating": 4,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,16"
+  },
+  {
+    "id": 17,
+    "guestName": "홍길동",
+    "roomName": "501호",
+    "content": "체크인이 빨라서 좋았어요.",
+    "date": "2025-05-02",
+    "rating": 5,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,17"
+  },
+  {
+    "id": 18,
+    "guestName": "신사임당",
+    "roomName": "201호",
+    "content": "방이 생각보다 넓고 쾌적했어요.",
+    "date": "2025-05-04",
+    "rating": 5,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,18"
+  },
+  {
+    "id": 19,
+    "guestName": "정약용",
+    "roomName": "301호",
+    "content": "직원들이 정말 친절해서 감동받았어요.",
+    "date": "2025-05-07",
+    "rating": 4,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,19"
+  },
+  {
+    "id": 20,
+    "guestName": "허준",
+    "roomName": "501호",
+    "content": "욕실이 깔끔하고 따뜻한 물도 잘 나왔어요.",
+    "date": "2025-05-03",
+    "rating": 5,
+    "image": "https://source.unsplash.com/400x300/?hotel,room,20"
+  }
+]

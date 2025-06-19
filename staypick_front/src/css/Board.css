@@ -1,0 +1,74 @@
+.faq-board {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.faq-title {
+  text-align: left;
+  margin-left: 180px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.faq-search {
+  display: flex;
+  align-items: center;
+  gap: 19px; /* input과 버튼 사이 여백 */
+  margin-left: 180px;
+  margin-bottom: 20px;
+  width: 700px;
+}
+
+.faq-search input {
+  width: 620px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.faq-search .search-button {
+  padding: 8px 16px;
+  background-color: #339cff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.faq-search .search-button:hover {
+  background-color: #1c7ed6;
+}
+
+.faq-tabs {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  margin-left: 180px;
+}
+
+.faq-tabs button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 24px;
+  background-color: #eee;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-tabs button.active {
+  background-color: #339cff;
+  color: white;
+}
+
+.faq-list {
+  max-width: 690px;
+  margin-left: 180px;
+}

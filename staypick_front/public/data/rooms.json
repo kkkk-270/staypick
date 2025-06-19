@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "image": "image.png",
+      "name": "디럭스 트윈 핸디캡룸(산 전망)",
+      "personnel": "기준3인 · 최대4인(유료)",
+      "checkin": "15:00",
+      "checkout": "11:00",
+      "extra": "킹베드 185X200cm / 취소,변경,환불 불가 상품",
+      "discountprice": "232000",
+      "regularprice": "600000"
+    },
+    {
+      "id": 2,
+      "image": "image.png",
+      "name": "디럭스 트윈 핸디캡룸(호수 전망)",
+      "personnel": "기준3인 · 최대4인(유료)",
+      "checkin": "15:00",
+      "checkout": "11:00",
+      "extra": "킹베드 185X200cm / 취소,변경,환불 불가 상품",
+      "discountprice": "269600",
+      "regularprice": "650000"
+    },
+    {
+      "id": 3,
+      "image": "image.png",
+      "name": "패밀리 트윈(산 전망)",
+      "personnel": "기준4인 · 최대5인(유료)",
+      "checkin": "15:00",
+      "checkout": "11:00",
+      "extra": "킹베드 185X200cm / 취소,변경,환불 불가 상품",
+      "discountprice": "269600",
+      "regularprice": "650000"
+    }
+  ]

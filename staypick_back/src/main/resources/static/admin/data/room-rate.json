@@ -1,0 +1,242 @@
+[
+  {
+    "roomId": 1,
+    "roomName": "101호 (프리미엄 트윈)",
+    "basePrice": 174360,
+    "weekendPrice": 191796,
+    "peakPrice": 226668,
+    "holidayPrice": 209232
+  },
+  {
+    "roomId": 2,
+    "roomName": "102호 (프리미엄 더블)",
+    "basePrice": 148654,
+    "weekendPrice": 163519,
+    "peakPrice": 193250,
+    "holidayPrice": 178384
+  },
+  {
+    "roomId": 3,
+    "roomName": "103호 (패밀리 스위트)",
+    "basePrice": 155105,
+    "weekendPrice": 170615,
+    "peakPrice": 201636,
+    "holidayPrice": 186126
+  },
+  {
+    "roomId": 4,
+    "roomName": "104호 (디럭스 더블)",
+    "basePrice": 101705,
+    "weekendPrice": 111875,
+    "peakPrice": 132216,
+    "holidayPrice": 122046
+  },
+  {
+    "roomId": 5,
+    "roomName": "105호 (프리미엄 트윈)",
+    "basePrice": 189673,
+    "weekendPrice": 208640,
+    "peakPrice": 246574,
+    "holidayPrice": 227607
+  },
+  {
+    "roomId": 6,
+    "roomName": "106호 (패밀리 스위트)",
+    "basePrice": 138720,
+    "weekendPrice": 152592,
+    "peakPrice": 180336,
+    "holidayPrice": 166464
+  },
+  {
+    "roomId": 7,
+    "roomName": "107호 (디럭스 더블)",
+    "basePrice": 127765,
+    "weekendPrice": 140541,
+    "peakPrice": 166094,
+    "holidayPrice": 153318
+  },
+  {
+    "roomId": 8,
+    "roomName": "108호 (디럭스 트윈)",
+    "basePrice": 180311,
+    "weekendPrice": 198342,
+    "peakPrice": 234404,
+    "holidayPrice": 216373
+  },
+  {
+    "roomId": 9,
+    "roomName": "109호 (스탠다드 더블)",
+    "basePrice": 194026,
+    "weekendPrice": 213428,
+    "peakPrice": 252233,
+    "holidayPrice": 232831
+  },
+  {
+    "roomId": 10,
+    "roomName": "110호 (프리미엄 더블)",
+    "basePrice": 125829,
+    "weekendPrice": 138411,
+    "peakPrice": 163577,
+    "holidayPrice": 150994
+  },
+  {
+    "roomId": 11,
+    "roomName": "111호 (디럭스 트윈)",
+    "basePrice": 164912,
+    "weekendPrice": 181403,
+    "peakPrice": 214385,
+    "holidayPrice": 197894
+  },
+  {
+    "roomId": 12,
+    "roomName": "112호 (스탠다드 더블)",
+    "basePrice": 199816,
+    "weekendPrice": 219797,
+    "peakPrice": 259760,
+    "holidayPrice": 239779
+  },
+  {
+    "roomId": 13,
+    "roomName": "113호 (스탠다드 트윈)",
+    "basePrice": 172025,
+    "weekendPrice": 189227,
+    "peakPrice": 223632,
+    "holidayPrice": 206430
+  },
+  {
+    "roomId": 14,
+    "roomName": "114호 (디럭스 더블)",
+    "basePrice": 83135,
+    "weekendPrice": 91448,
+    "peakPrice": 108075,
+    "holidayPrice": 99762
+  },
+  {
+    "roomId": 15,
+    "roomName": "115호 (프리미엄 트윈)",
+    "basePrice": 160090,
+    "weekendPrice": 176099,
+    "peakPrice": 208117,
+    "holidayPrice": 192108
+  },
+  {
+    "roomId": 16,
+    "roomName": "116호 (프리미엄 더블)",
+    "basePrice": 161881,
+    "weekendPrice": 178069,
+    "peakPrice": 210445,
+    "holidayPrice": 194257
+  },
+  {
+    "roomId": 17,
+    "roomName": "117호 (디럭스 트윈)",
+    "basePrice": 187989,
+    "weekendPrice": 206787,
+    "peakPrice": 244385,
+    "holidayPrice": 225586
+  },
+  {
+    "roomId": 18,
+    "roomName": "118호 (패밀리 스위트)",
+    "basePrice": 96299,
+    "weekendPrice": 105928,
+    "peakPrice": 125188,
+    "holidayPrice": 115558
+  },
+  {
+    "roomId": 19,
+    "roomName": "119호 (스탠다드 더블)",
+    "basePrice": 126372,
+    "weekendPrice": 139009,
+    "peakPrice": 164283,
+    "holidayPrice": 151646
+  },
+  {
+    "roomId": 20,
+    "roomName": "120호 (패밀리 스위트)",
+    "basePrice": 129374,
+    "weekendPrice": 142311,
+    "peakPrice": 168186,
+    "holidayPrice": 155248
+  },
+  {
+    "roomId": 21,
+    "roomName": "121호 (프리미엄 트윈)",
+    "basePrice": 195998,
+    "weekendPrice": 215597,
+    "peakPrice": 254797,
+    "holidayPrice": 235197
+  },
+  {
+    "roomId": 22,
+    "roomName": "122호 (패밀리 스위트)",
+    "basePrice": 194756,
+    "weekendPrice": 214231,
+    "peakPrice": 253182,
+    "holidayPrice": 233707
+  },
+  {
+    "roomId": 23,
+    "roomName": "123호 (프리미엄 트윈)",
+    "basePrice": 152423,
+    "weekendPrice": 167665,
+    "peakPrice": 198149,
+    "holidayPrice": 182907
+  },
+  {
+    "roomId": 24,
+    "roomName": "124호 (디럭스 더블)",
+    "basePrice": 118669,
+    "weekendPrice": 130535,
+    "peakPrice": 154269,
+    "holidayPrice": 142402
+  },
+  {
+    "roomId": 25,
+    "roomName": "125호 (프리미엄 더블)",
+    "basePrice": 95361,
+    "weekendPrice": 104897,
+    "peakPrice": 123969,
+    "holidayPrice": 114433
+  },
+  {
+    "roomId": 26,
+    "roomName": "126호 (디럭스 더블)",
+    "basePrice": 179501,
+    "weekendPrice": 197451,
+    "peakPrice": 233351,
+    "holidayPrice": 215401
+  },
+  {
+    "roomId": 27,
+    "roomName": "127호 (스탠다드 트윈)",
+    "basePrice": 193850,
+    "weekendPrice": 213235,
+    "peakPrice": 252005,
+    "holidayPrice": 232620
+  },
+  {
+    "roomId": 28,
+    "roomName": "128호 (디럭스 더블)",
+    "basePrice": 81915,
+    "weekendPrice": 90106,
+    "peakPrice": 106489,
+    "holidayPrice": 98298
+  },
+  {
+    "roomId": 29,
+    "roomName": "129호 (디럭스 트윈)",
+    "basePrice": 110421,
+    "weekendPrice": 121463,
+    "peakPrice": 143547,
+    "holidayPrice": 132505
+  },
+  {
+    "roomId": 30,
+    "roomName": "130호 (디럭스 더블)",
+    "basePrice": 111626,
+    "weekendPrice": 122788,
+    "peakPrice": 145113,
+    "holidayPrice": 133951
+  }
+]

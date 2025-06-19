@@ -1,0 +1,162 @@
+.season-period-page.full-width {
+  width: 100%;
+  max-width: 100%;
+  padding: 24px 40px;
+  box-sizing: border-box;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.season-period-page.full-width > h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #2b2b2b;
+}
+
+/* 한 줄 입력 정렬 */
+.condition-filter.single-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.condition-filter label {
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+.condition-filter select,
+.condition-filter input,
+.condition-filter .datepicker {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.condition-filter input,
+.condition-filter select {
+  min-width: 160px;
+}
+
+.add-btn {
+  padding: 8px 18px;
+  background-color: #4f84ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #366be2;
+}
+
+/* 타입 필터 버튼 */
+.type-filter-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.type-filter-bar button {
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.type-filter-bar button.active {
+  background-color: #4f84ff;
+  color: white;
+  border-color: #4f84ff;
+}
+
+/* 월별 필터 */
+.month-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.month-filter-bar button {
+  padding: 4px 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background-color: #eee;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.month-filter-bar button.active {
+  background-color: #2e7dff;
+  color: #fff;
+  border-color: #2e7dff;
+}
+
+/* 데이터 테이블 */
+.period-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.period-table th,
+.period-table td {
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.period-table th {
+  background-color: #f0f3f9;
+  color: #333;
+}
+
+.period-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* 삭제 버튼 */
+.delete-btn {
+  padding: 5px 12px;
+  background-color: #ff5b5b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #e04444;
+}
+
+/* 저장 버튼 */
+.save-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.save-btn {
+  padding: 10px 26px;
+  background-color: #23b26d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #1c9a5a;
+}

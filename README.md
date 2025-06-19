@@ -9,7 +9,7 @@
 
 | 이름     | 역할             | GitHub                                 | 이메일                  |
 |----------|------------------|-----------------------------------------|--------------------------|
-| 서동현   | 팀장 / 프론트 및 백엔드 개발 | [@ca1yp2-dev](https://github.com/ca1py2) | seodh2706@gmail.com      |
+| 서동현   | 팀장 / 프론트 및 백엔드 개발 | [@ca1yp2-dev](https://github.com/ca1yp2) | seodh2706@gmail.com      |
 | 김진재   | 프론트엔드 및 백엔드 개발, 사이트 배포  | [@kkkk-270-dev](https://github.com/kkkk-270)  | jin567656@naver.com        |
 | 주현우  | 프론트엔드 개발, 정적 데이터 처리   | [@joohw1-dev](https://github.com/joohw1)   | hyonu08@gmail.com     |
 

@@ -575,25 +575,25 @@ const Register = () => {
                         ) : (
                             <>
                                 <div className="signUpTitle">아이디 <span className="error-message">{idError}</span></div>
-                                <input type="text" name="inputId" value={inputId} onChange={handleInputChange} />
+                                <input type="text" name="inputId" value={inputId} onChange={handleInputChange} placeholder='이름과 동일하지 않은 6~8자로 입력해주세요.' />
                                 <button className="idCheck-btn" type="button" onClick={handleIdCheck}>중복확인</button>
 
                                 <div className="signUpTitle">비밀번호 <span className="error-message">{pwError}</span></div>
-                                <input type="password" name="inputPw" value={inputPw} onChange={handleInputChange} onBlur={validatePassword} />
+                                <input type="password" name="inputPw" value={inputPw} onChange={handleInputChange} onBlur={validatePassword} placeholder='영문+숫자+특수문자 조합으로 8~16자로 입력해주세요.' />
 
                                 <div className="signUpTitle">비밀번호 확인 <span className="error-message">{rePwError}</span></div>
-                                <input type="password" name="inputRepw" value={inputRepw} onChange={handleInputChange} />
+                                <input type="password" name="inputRepw" value={inputRepw} onChange={handleInputChange} placeholder='위와 동일한 비밀번호를 다시 한 번 입력해주세요.' />
                             </>
                         )}
 
                         <div className="signUpTitle">이름 <span className="error-message">{nameError}</span></div>
-                        <input type="text" name="inputName" value={inputName} onChange={handleInputChange} readOnly={isNaverUser} />
+                        <input type="text" name="inputName" value={inputName} onChange={handleInputChange} readOnly={isNaverUser} placeholder='이름을 입력해주세요.' />
 
                         <div className="signUpTitle">전화번호 <span className="error-message">{phoneError}</span></div>
-                        <input type="text" name="inputPhone" value={inputPhone} onChange={handleInputChange} />
+                        <input type="text" name="inputPhone" value={inputPhone} onChange={handleInputChange} placeholder="전화번호를 입력해주세요.('-' 제외)" />
 
                         <div className="signUpTitle">이메일 <span className="error-message">{emailError}</span></div>
-                        <input type="email" name="inputEmail" value={inputEmail} onChange={handleInputChange} onKeyDown={(e) => {if(e.key === ' ') e.preventDefault()}} readOnly={isNaverUser} />
+                        <input type="email" name="inputEmail" value={inputEmail} onChange={handleInputChange} onKeyDown={(e) => {if(e.key === ' ') e.preventDefault()}} readOnly={isNaverUser} placeholder='이메일을 입력해주세요.' />
 
                         <div className="signUpTitle">생년월일(선택)</div>
                         <div className="birth-box">

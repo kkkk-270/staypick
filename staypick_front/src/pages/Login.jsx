@@ -69,6 +69,7 @@ const Login = () => {
           username: payload.username,
           role: payload.role
         };
+        localStorage.setItem('user', JSON.stringify(user));
         setAuth({ user, token });
         navigate('/');
       } else if (res.data.needAdditionalInfo) {
@@ -121,6 +122,7 @@ const Login = () => {
             username: payload.username,
             role: payload.role
           };
+          localStorage.setItem('user', JSON.stringify(user));
           setAuth({ user, token });
           navigate('/');
         } else if (res.data.needAdditionalInfo) {

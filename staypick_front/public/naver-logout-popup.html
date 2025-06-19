@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>네이버 로그아웃 중...</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #f5f6f7;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .sub-message {
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="https://ssl.pstatic.net/sstatic/search/favicon/favicon_191118_pc.ico" alt="Naver" />
+    <div class="message">네이버 로그아웃 중입니다...</div>
+    <div class="sub-message">잠시만 기다려 주세요</div>
+  </div>
+
+  <script>
+    // 로그아웃 처리 → 네이버 로그아웃 페이지로 이동
+    setTimeout(() => {
+      window.location.href = 'https://nid.naver.com/nidlogin.logout';
+    }, 1000);
+  </script>
+</body>
+</html>

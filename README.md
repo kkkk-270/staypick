@@ -13,66 +13,7 @@
 | 김진재   | 프론트엔드 및 백엔드 개발, 사이트 배포  | [@kkkk-270-dev](https://github.com/kkkk-270)  | jin567656@naver.com        |
 | 주현우  | 프론트엔드 개발, 정적 데이터 처리   | [@joohw1-dev](https://github.com/joohw1)   | hyonu08@gmail.com     |
 
-
-## 📌 주요 기능
-
-### ✅ 사용자 기능
-- 소셜 로그인 (카카오, 네이버, 구글 OAuth 연동)
-- 숙소 검색 및 상세 필터링
-- 실시간 객실 예약 및 결제 (토스페이먼츠 SDK 연동)
-- 예약 내역 조회, 수정 및 취소
-- 리뷰 작성, 조회 및 이미지 업로드
-- 비밀번호 찾기 및 재설정 (이메일 인증 기반)
-- 개인 정보 수정 및 회원 정보 관리
-
-### ✅ 사업자 및 관리자 기능
-- 숙소 등록, 수정
-- 객실 및 요금(기본/주말/성수기/할인) 정보 관리
-- 시즌별 할인 정책 설정 및 기간 관리
-- 예약 현황 실시간 모니터링 및 관리
-- 고객 문의 및 리뷰 관리
-
 ---
-
-## 📦 결제 API 연동 구조 (Toss Payments)
-
-StayPick은 Toss Payments와의 연동에서 **REST API 방식**을 채택하여,  
-**결제 흐름의 제어권 확보**, **보안성 강화**, **매끄러운 UX 제공**을 동시에 달성하였습니다.
-
-### 🔐 구조적 특징
-
-| 항목                     | 설명 |
-|--------------------------|------|
-| **연동 방식**              | Toss Widget이 아닌, REST API 기반 자체 연동 방식 |
-| **결제 준비 API**         | `POST /api/payments/ready` → Toss 본사 `/v1/payments` 호출 |
-| **결제 승인 API**         | `POST /api/payments/success` → Toss 본사 `/v1/payments/confirm` |
-| **Secret Key 보안 처리**   | 모든 결제 API는 백엔드에서만 호출하여 Secret Key 노출 없음 |
-| **UX 흐름**               | 사용자: Toss 결제창만 경험 / 시스템: 백엔드에서 예약 저장 및 응답 |
-
----
-
-### 🧩 결제 흐름 상세 다이어그램
-
-1. 사용자 (Payment.jsx)
-   └── 예약 정보 입력 후 [결제하기] 클릭
-         ↓
-2. 백엔드 (/api/payments/ready)
-   └── Toss 결제 준비 API 호출 → 결제창 URL 응답
-         ↓
-3. 프론트 (TossCheckout.jsx)
-   └── 결제창으로 리다이렉트 → 카드 정보 입력
-         ↓
-4. Toss (결제 완료)
-   └── 설정된 successUrl로 리다이렉션
-         ↓
-5. 프론트 (TossSuccess.jsx)
-   └── 백엔드로 paymentKey, orderId 전달
-         ↓
-6. 백엔드 (/api/payments/success)
-   └── Toss 승인 API 호출 → 예약 정보 DB 저장
-         ↓
-7. 사용자 (MyReservations.jsx)
-   └── 결제 후 예약 내역 자동 반영
 
 
 ## ⚙️ 기술 스택
@@ -124,12 +65,71 @@ StayPick은 Toss Payments와의 연동에서 **REST API 방식**을 채택하여
 - **환경 구성** – `.env`, `vite.config.js`, `eslint.config.js`
 
 ---
+
+## 📌 주요 기능
+
+### ✅ 사용자 기능
+- 소셜 로그인 (카카오, 네이버, 구글 OAuth 연동)
+- 숙소 검색 및 상세 필터링
+- 실시간 객실 예약 및 결제 (토스페이먼츠 SDK 연동)
+- 예약 내역 조회, 수정 및 취소
+- 리뷰 작성, 조회 및 이미지 업로드
+- 비밀번호 찾기 및 재설정 (이메일 인증 기반)
+- 개인 정보 수정 및 회원 정보 관리
+
+### ✅ 사업자 및 관리자 기능
+- 숙소 등록, 수정
+- 객실 및 요금(기본/주말/성수기/할인) 정보 관리
+- 시즌별 할인 정책 설정 및 기간 관리
+- 예약 현황 실시간 모니터링 및 관리
+- 고객 문의 및 리뷰 관리
+
+---
+
+## 📦 결제 API 연동 구조 (Toss Payments)
+
+StayPick은 Toss Payments와의 연동에서 **REST API 방식**을 채택하여,  
+**결제 흐름의 제어권 확보**, **보안성 강화**, **매끄러운 UX 제공**을 동시에 달성하였습니다.
+
+### 🔐 구조적 특징
+
+| 항목                     | 설명 |
+|--------------------------|------|
+| **연동 방식**              | Toss Widget이 아닌, REST API 기반 자체 연동 방식 |
+| **결제 준비 API**         | `POST /api/payments/ready` → Toss 본사 `/v1/payments` 호출 |
+| **결제 승인 API**         | `POST /api/payments/success` → Toss 본사 `/v1/payments/confirm` |
+| **Secret Key 보안 처리**   | 모든 결제 API는 백엔드에서만 호출하여 Secret Key 노출 없음 |
+| **UX 흐름**               | 사용자: Toss 결제창만 경험 / 시스템: 백엔드에서 예약 저장 및 응답 |
+
+### 🧩 결제 흐름 상세 다이어그램
+
+1. 사용자 (Payment.jsx)
+   └── 예약 정보 입력 후 [결제하기] 클릭
+         ↓
+2. 백엔드 (/api/payments/ready)
+   └── Toss 결제 준비 API 호출 → 결제창 URL 응답
+         ↓
+3. 프론트 (TossCheckout.jsx)
+   └── 결제창으로 리다이렉트 → 카드 정보 입력
+         ↓
+4. Toss (결제 완료)
+   └── 설정된 successUrl로 리다이렉션
+         ↓
+5. 프론트 (TossSuccess.jsx)
+   └── 백엔드로 paymentKey, orderId 전달
+         ↓
+6. 백엔드 (/api/payments/success)
+   └── Toss 승인 API 호출 → 예약 정보 DB 저장
+         ↓
+7. 사용자 (MyReservations.jsx)
+   └── 결제 후 예약 내역 자동 반영
+
+---
+
 ## 🚀 STAYPICK 운영 배포 구조 (Nginx + Spring Boot + React)
 
 STAYPICK는 AWS EC2 서버에서 Nginx를 중심으로 프론트엔드(React)와 백엔드(Spring Boot)를 통합하여  
 실제 서비스 환경에 맞는 HTTPS 기반의 안정적인 운영 구조를 구축하였습니다.
-
----
 
 ### 📦 시스템 구성 요약
 
@@ -139,8 +139,6 @@ STAYPICK는 AWS EC2 서버에서 Nginx를 중심으로 프론트엔드(React)와
 | **React** | 사용자 UI 제공 (SPA), `/` 경로에서 작동 | `/var/www/html` |
 | **Spring Boot** | API 처리, DB 연동, Toss 결제/예약 로직 | `localhost:8081` |
 | **정적 이미지** | 썸네일, 리뷰 이미지 등 | `/upload/**` |
-
----
 
 ### ⚙️ 주요 구성
 
@@ -162,14 +160,10 @@ STAYPICK는 AWS EC2 서버에서 Nginx를 중심으로 프론트엔드(React)와
 - SPA 라우팅 처리 → 모든 경로를 `/index.html`로 fallback
 - HTTP 요청은 HTTPS로 강제 리디렉션
 
----
-
 ### 🔐 HTTPS 적용 이유
 - 사용자 로그인/결제 정보를 암호화
 - Toss Payments 연동 필수 조건
 - 무료 SSL 인증서 Let's Encrypt 적용
-
----
 
 ### 🔁 요청 흐름 요약
 
@@ -180,6 +174,8 @@ STAYPICK는 AWS EC2 서버에서 Nginx를 중심으로 프론트엔드(React)와
   ├─ /api/**     → Spring Boot 백엔드 (예약, 결제 등)
   ├─ /upload/**  → 이미지 응답
   └─ 정적 파일   → React 빌드 파일(main.js, style.css 등)
+
+---
 
 ## 🗂️ 프로젝트 구조 
 

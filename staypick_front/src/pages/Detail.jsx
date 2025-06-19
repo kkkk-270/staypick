@@ -62,35 +62,8 @@ const Detail = () => {
         setLoading(false);
       }
     };
-
     fetchHotelDetail();
   }, [hotelIdFromUrl]);
-
-  const handleReservation = () => {
-    if (hotel && roomInfos.length > 0) {
-      const room = roomInfos[0];
-      navigate('/payment', {
-        state: {
-          hotel,
-          roomInfo: {
-            name: room.roomName,
-            roomType: room.roomType,
-            roomNumber: room.roomNumber,
-            personnel: room.personnel,
-            checkin: room.checkin,
-            checkout: room.checkout,
-            discountPrice: room.discountPrice,
-            regularPrice: room.price,
-          },
-          checkInDate,
-          checkOutDate,
-          guestCount,
-        },
-      });
-    } else {
-      alert('호텔 정보나 객실 정보가 없습니다.');
-    }
-  };
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;

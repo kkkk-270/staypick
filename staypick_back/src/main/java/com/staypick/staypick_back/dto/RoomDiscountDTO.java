@@ -12,6 +12,7 @@ import lombok.Data;
 public class RoomDiscountDTO {
     private Long id;
     private Long roomId;
+    private String accName;
     private String discountType;
     private Integer discountValue;
     private String periodName;

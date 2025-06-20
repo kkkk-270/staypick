@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../css/AdminLogin.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 
 const AdminLogin = () => {
@@ -36,39 +36,42 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="admin-login-container">
-      <h2>사장님 로그인</h2>
-      <form onSubmit={handleLogin} className="admin-login-form">
-        <input
-          type="text"
-          placeholder="아이디"
-          value={adminId}
-          onChange={(e) => setAdminId(e.target.value)}
-          onKeyDown={(e) => {
-            if(e.key === 'Enter'){
-              handleLogin();
-            }
-            if(e.key === ' ') e.preventDefault();
-          }}
-        />
-        <input
-          type="password"
-          placeholder="비밀번호"
-          value={adminPw}
-          onChange={(e) => setAdminPw(e.target.value)}
-          onKeyDown={(e) => {
-            if(e.key === 'Enter'){
-              handleLogin();
-            }
-            if(e.key === ' ') e.preventDefault();
-          }}
-        />
-        {error && <div className="admin-login-error">{error}</div>}
-        <button type="submit" className="admin-login-btn">
-          로그인
-        </button>
-      </form>
-    </div>
+    <>
+      <div className="admin-login-container">
+        <h2>사장님 로그인</h2>
+        <form onSubmit={handleLogin} className="admin-login-form">
+          <input
+            type="text"
+            placeholder="아이디"
+            value={adminId}
+            onChange={(e) => setAdminId(e.target.value)}
+            onKeyDown={(e) => {
+              if(e.key === 'Enter'){
+                handleLogin();
+              }
+              if(e.key === ' ') e.preventDefault();
+            }}
+          />
+          <input
+            type="password"
+            placeholder="비밀번호"
+            value={adminPw}
+            onChange={(e) => setAdminPw(e.target.value)}
+            onKeyDown={(e) => {
+              if(e.key === 'Enter'){
+                handleLogin();
+              }
+              if(e.key === ' ') e.preventDefault();
+            }}
+          />
+          {error && <div className="admin-login-error">{error}</div>}
+          <button type="submit" className="admin-login-btn">
+            로그인
+          </button>
+        </form>
+        <Link to="/admin/register">사장님 회원가입</Link>
+      </div>
+    </>
   );
 };
 

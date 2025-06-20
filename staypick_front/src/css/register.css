@@ -318,3 +318,8 @@ select:focus { outline: none; }
 .step.complete.active .btn-home:hover {
   background-color: #1b75c9;
 }
+
+.agree-btn-container{
+  width: 100%;
+  text-align: center;
+}

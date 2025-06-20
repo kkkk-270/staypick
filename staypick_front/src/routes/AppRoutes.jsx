@@ -25,6 +25,7 @@ import MyInquiries from '../components/MyInquiry';
 
 // 관리자 페이지
 import AdminLogin from '../admin/pages/AdminLogin';
+import AdminRegister from '../admin/pages/AdminRegister';
 import AdminDashboard from '../admin/pages/AdminDashboard';
 import AdminReservation from '../admin/pages/AdminReservation';
 import DiscountSettings from '../admin/pages/DiscountSettings';
@@ -44,6 +45,7 @@ const AppRoutes = () => {
     <Routes>
       {/* 관리자 로그인은 별도 처리 */}
       <Route path="/admin/login" element={<AdminLogin />} />
+      <Route path="/admin/register" element={<AdminRegister />} />
 
       {/* 관리자 레이아웃 적용 */}
       <Route path="/admin" element={<AdminLayout />}>

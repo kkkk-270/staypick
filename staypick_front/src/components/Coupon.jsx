@@ -44,7 +44,7 @@ const Coupon = ({ onCouponSelect }) => {
 
   useEffect(() => {
     axiosInstance
-      .get('/api/coupons')  // ✅ 서버 연동 버전
+      .get('/coupons')  // ✅ 서버 연동 버전
       .then((res) => setCoupons(res.data))
       .catch((err) => console.error('쿠폰 데이터 로딩 실패', err));
   }, []);
@@ -70,7 +70,7 @@ const Coupon = ({ onCouponSelect }) => {
         />
         <span className="ms-1">할인 쿠폰 사용</span>
         {selectedCoupon && (
-          <span className="text.secondary"> ({selectedCoupon.name})</span>
+          <span className="text.secondary"> ({`[${selectedCoupon.accName}]${selectedCoupon.periodName} ${selectedCoupon.discountValue}${selectedCoupon.discountType === 'PERCENT' ? '%' : '원'}`})</span>
         )}
       </div>
       <div className={`coupon-dropdown ${isCouponDropdownOpen ? 'open' : ''}`}>
@@ -79,8 +79,8 @@ const Coupon = ({ onCouponSelect }) => {
             coupons.map((coupon) => (
               <div className="couponbox" key={coupon.id}>
                 <div className="couponinfo">
-                  <div className="text-wrapper-39">{coupon.name}</div>
-                  <p className="text-wrapper-41">유효기간 {coupon.expiration} 까지</p>
+                  <div className="text-wrapper-39">[{coupon.accName}]{coupon.periodName} {coupon.discountValue}{coupon.discountType === 'PERCENT' ? '%' : '원'}</div>
+                  <p className="text-wrapper-41">유효기간: {coupon.startDate} ~ {coupon.endDate}</p>
                 </div>
                 <button
                   type="button"

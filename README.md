@@ -1,200 +1,95 @@
-﻿﻿# 🏨 숙박 예약 플랫폼 StayPick
+
+# 🏨 숙박 예약 플랫폼 StayPick (김진재 중심 포트폴리오용)
 
 > 사용자를 위한 간편한 숙소 예약 시스템과  
 > 관리자/사업자를 위한 통합 숙소 관리 기능을 제공하는 웹 기반 숙박 예약 플랫폼입니다.
 
 ---
 
-## 👥 팀원 소개
+## 👥 팀원 역할 소개
 
-| 이름     | 역할             | GitHub                                 | 이메일                  |
-|----------|------------------|-----------------------------------------|--------------------------|
-| 서동현   | 팀장 / 프론트 및 백엔드 개발 | [@ca1yp2-dev](https://github.com/ca1yp2) | seodh2706@gmail.com      |
-| 김진재   | 프론트엔드 및 백엔드 개발, 사이트 배포  | [@kkkk-270-dev](https://github.com/kkkk-270)  | jin567656@naver.com        |
-| 주현우  | 프론트엔드 개발, 정적 데이터 처리   | [@joohw1-dev](https://github.com/joohw1)   | hyonu08@gmail.com     |
+| 이름 | 역할 | GitHub |
+|------|------|--------|
+| 서동현 (팀장) | 백엔드 전반 설계 및 사용자 기능 API 구축 | [@ca1yp2](https://github.com/ca1yp2) |
+| 김진재 | 프론트엔드 전체 / 관리자 시스템 / Toss 연동 / 배포 구성 | [@kkkk-270](https://github.com/kkkk-270) |
+| 주현우 | 프론트엔드 보조, 정적 데이터 구성 및 테스트 지원 | [@joohw1](https://github.com/joohw1) |
 
 ---
 
+## 👤 담당 역할 - 김진재
 
-## ⚙️ 개발 환경
+| 역할 구분 | 세부 내용 |
+|-----------|-----------|
+| **프론트엔드** | 전체 사용자 페이지 및 관리자 페이지 UI 개발<br/>컴포넌트 구조 설계, React 상태 관리, 달력/모달 등 주요 기능 구현<br/>마이페이지(예약, 리뷰, 정보 수정), 관리자 대시보드, 요금 관리, 문의/리뷰 관리 화면 등 직접 구현 |
+| **백엔드** | JWT 기반 인증 및 사용자 정보 처리<br/>예약/결제/리뷰/문의 도메인 중심 API 일부 구현<br/>Toss Payments 연동 구조 설계 및 데이터 저장 흐름 구성 |
+| **배포 환경 구성** | AWS EC2, RDS, S3 설정<br/>Nginx 리버스 프록시 및 정적 자원 분리<br/>SSL 인증서 적용, S3 이미지 연동 및 운영 환경 구성 |
+
+---
+
+## ⚙️ 개발 환경 요약
 
 ### 🖥️ Frontend - React (SPA 구조)
-- 숙소 리스트, 예약 등 빠른 페이지 전환이 핵심으로 생각해
-싱글페이지 기반의 React로 구성했습니다.  컴포넌트 단위로 UI를 관리하고, 
-상태 관리를 통해 예약 흐름을 유지했습니다.
+- 컴포넌트 단위 UI 설계 및 상태 관리
+- React Router 기반 SPA 구조 구축
+- axios 기반 비동기 통신 및 사용자 흐름 구현
 
-### 🖥️ Backend  - Spring Boot (RESTful API 구축)
-- 백엔드에서 유저/숙소/예약/리뷰 등 도메인을 나누고,JWT 인증 기반으로
-API 보안을 구현했습니다.  구조적인 설계에 집중하며 서비스 확장성을 고려했습니다.
+### 🖥️ Backend - Spring Boot (REST API)
+- JWT 인증 기반 로그인 시스템 구축
+- 예약, 리뷰, 결제 등 API 설계 및 일부 기능 구현
+- Toss Payments API REST 방식 연동 구조 구성
 
-### 🖥️ Database  - MySQL (데이터베이스 설계 및 운영) 
-- 숙박 예약, 리뷰, 사용자 등 관계형 구조가 명확한 도메인을 관리하기 위해
-MySQL을 사용했습니다.  JPA를 통해 엔티티 간 관계를 설계하고, 
-AWS RDS를 통해 실제 운영 환경에서 안정적으로 서비스했습니다.
+### 🗃️ Database - MySQL + JPA
+- ERD 설계 및 엔티티 관계 구성
+- JPA 기반 예약/리뷰/회원 도메인 매핑 및 Repository 구현
 
-### 🖥️ 운영 배포 환경 - AWS EC2 + RDS + Nginx 
-- EC2에 백엔드, 프론트는 별도 정적 경로에 분리 배포하고 
-Nginx로 API와 정적 자원을 구분 처리했습니다.
-HTTPS 적용과 RDS 구성까지 직접 설정하며 실서비스 수준의 운영환경을 구현했습니다.
-
----
-
-## 📌 주요 기능
-
-### ✅ 사용자 기능
-- 소셜 로그인 (카카오, 네이버, 구글 OAuth 연동)
-- 숙소 검색 및 상세 필터링
-- 실시간 객실 예약 및 결제 (토스페이먼츠 SDK 연동)
-- 예약 내역 조회, 수정 및 취소
-- 리뷰 작성, 조회 및 이미지 업로드
-- 비밀번호 찾기 및 재설정 (이메일 인증 기반)
-- 개인 정보 수정 및 회원 정보 관리
-
-### ✅ 사업자 및 관리자 기능
-- 숙소 등록, 수정
-- 객실 및 요금(기본/주말/성수기/할인) 정보 관리
-- 시즌별 할인 정책 설정 및 기간 관리
-- 예약 현황 실시간 모니터링 및 관리
-- 고객 문의 및 리뷰 관리
+### ☁️ 운영환경 - AWS + Nginx
+- EC2에 백엔드 배포, 프론트는 정적 자원으로 빌드하여 배포
+- RDS(MySQL), S3(리뷰 이미지) 연동 및 운영
+- Nginx로 정적/동적 자원 분기 처리 및 HTTPS 설정 적용
 
 ---
 
-## 📦 결제 API 연동 구조 (Toss Payments)
+## 📌 주요 구현 기능 (김진재 파트 기준)
 
-StayPick은 Toss Payments와의 연동에서 **REST API 방식**을 채택하여,  
-**결제 흐름의 제어권 확보**, **보안성 강화**, **매끄러운 UX 제공**을 동시에 달성하였습니다.
+### ✅ 사용자 측 UI 기능
+- 로그인/회원가입/비밀번호 재설정 (소셜 + 이메일 기반)
+- 숙소 검색, 예약 정보 전달 및 페이지 연동
+- 결제 흐름 구성 (Payment → Checkout → Success)
+- 마이페이지 (예약 내역 / 리뷰 작성·조회 / 회원 정보 수정)
 
-### 🔐 구조적 특징
+### ✅ 관리자 시스템 기능
+- 객실 및 요금 정보 관리 (기본/주말/성수기/할인)
+- 시즌·성수기·주말 자동 등록 UI 개발
+- 리뷰 및 문의 관리 화면 및 답변 처리 기능 구현
+- 관리자 예약 현황 달력, 대시보드 차트 등 UI 직접 구성
 
-| 항목                     | 설명 |
-|--------------------------|------|
-| **연동 방식**              | Toss Widget이 아닌, REST API 기반 자체 연동 방식 |
-| **결제 준비 API**         | `POST /api/payments/ready` → Toss 본사 `/v1/payments` 호출 |
-| **결제 승인 API**         | `POST /api/payments/success` → Toss 본사 `/v1/payments/confirm` |
-| **Secret Key 보안 처리**   | 모든 결제 API는 백엔드에서만 호출하여 Secret Key 노출 없음 |
-| **UX 흐름**               | 사용자: Toss 결제창만 경험 / 시스템: 백엔드에서 예약 저장 및 응답 |
-
-### 🧩 결제 흐름 상세 다이어그램
-
-1. 사용자 (Payment.jsx)
-   └── 예약 정보 입력 후 [결제하기] 클릭
-         ↓
-2. 백엔드 (/api/payments/ready)
-   └── Toss 결제 준비 API 호출 → 결제창 URL 응답
-         ↓
-3. 프론트 (TossCheckout.jsx)
-   └── 결제창으로 리다이렉트 → 카드 정보 입력
-         ↓
-4. Toss (결제 완료)
-   └── 설정된 successUrl로 리다이렉션
-         ↓
-5. 프론트 (TossSuccess.jsx)
-   └── 백엔드로 paymentKey, orderId 전달
-         ↓
-6. 백엔드 (/api/payments/success)
-   └── Toss 승인 API 호출 → 예약 정보 DB 저장
-         ↓
-7. 사용자 (MyReservations.jsx)
-   └── 결제 후 예약 내역 자동 반영
+### ✅ Toss 결제 연동 (REST API 방식)
+- 결제 준비 → 승인 → 예약 저장까지 전체 흐름 설계 및 프론트 연동 구현
+- 프론트에서 예약 정보 상태 유지 및 성공 처리 후 상태 반영 처리 담당
 
 ---
 
-## 🚀 STAYPICK 운영 배포 구조 (Nginx + Spring Boot + React)
+## 📁 주요 폴더 구조 (참여 중심 위주)
 
-STAYPICK는 AWS EC2 서버에서 Nginx를 중심으로 프론트엔드(React)와 백엔드(Spring Boot)를 통합하여  
-실제 서비스 환경에 맞는 HTTPS 기반의 안정적인 운영 구조를 구축하였습니다.
+```bash
+staypick_front/
+├── components/        # 공통 컴포넌트 (Modal, DatePicker 등)
+├── pages/             # 사용자 페이지 (홈, 숙소, 마이페이지 등)
+├── admin/pages/       # 관리자 전용 페이지
+├── admin/components/  # 관리자 기능별 UI 컴포넌트
+├── api/               # Axios 인스턴스 및 API 함수 관리
+├── routes/            # React Router 설정
+├── css/               # 스타일 파일
+└── main.jsx           # 진입점
 
-### 📦 시스템 구성 요약
-
-| 구성 요소 | 역할 | 경로 |
-|-----------|------|------|
-| **Nginx** | 리버스 프록시, 정적 파일 서빙, HTTPS 처리 | 443/80 포트 |
-| **React** | 사용자 UI 제공 (SPA), `/` 경로에서 작동 | `/var/www/html` |
-| **Spring Boot** | API 처리, DB 연동, Toss 결제/예약 로직 | `localhost:8081` |
-| **정적 이미지** | 썸네일, 리뷰 이미지 등 | `/upload/**` |
-
-### ⚙️ 주요 구성
-
-#### 프론트엔드 (React)
-- 모든 UI 페이지 구성 및 렌더링
-- React Router 기반 SPA 방식
-- axios로 백엔드 `/api/**` 호출
-- 빌드 결과를 `/var/www/html`에 배포하여 Nginx가 정적 파일로 응답
-
-#### 백엔드 (Spring Boot)
-- 로그인, 예약, 리뷰, 결제 등 핵심 비즈니스 로직 처리
-- Toss Payments API 연동도 백엔드에서 실행 (보안 확보)
-- `/api/**` 및 `/upload/**` 경로 요청 담당
-
-#### Nginx (리버스 프록시)
-- HTTPS 인증 처리 (Let's Encrypt)
-- 정적 파일 직접 응답 (CSS, JS, 이미지 등)
-- `/api/`, `/upload/` 요청은 백엔드로 전달
-- SPA 라우팅 처리 → 모든 경로를 `/index.html`로 fallback
-- HTTP 요청은 HTTPS로 강제 리디렉션
-
-### 🔐 HTTPS 적용 이유
-- 사용자 로그인/결제 정보를 암호화
-- Toss Payments 연동 필수 조건
-- 무료 SSL 인증서 Let's Encrypt 적용
-
-### 🔁 요청 흐름 요약
-
-
-[사용자]
-  ↓
-[Nginx]
-  ├─ /api/**     → Spring Boot 백엔드 (예약, 결제 등)
-  ├─ /upload/**  → 이미지 응답
-  └─ 정적 파일   → React 빌드 파일(main.js, style.css 등)
-
----
-
-## 🗂️ 프로젝트 구조 
-
-```
-staypick/
-├── staypick_back/ # 🖥️ Spring Boot 백엔드
-│ └── src/
-│ └── main/
-│ └── java/com/staypick/staypick_back/
-│ ├── StaypickBackApplication.java # 메인 클래스
-│ ├── controller/ # 사용자/관리자 컨트롤러
-│ │ └── api/ # API 전용 컨트롤러
-│ ├── dto/ # 요청/응답 DTO
-│ ├── entity/ # JPA 엔티티
-│ ├── exception/ # 전역 예외 처리
-│ ├── repository/ # JPA 리포지토리
-│ ├── security/ # Spring Security 설정
-│ ├── service/ # 비즈니스 로직
-│ └── util/ # 유틸리티 클래스
-
-├── staypick_front/ # 🌐 React 프론트엔드
-│ ├── public/
-│ │ ├── data/ # 더미 JSON 데이터
-│ │ ├── imgs/
-│ │ └── admin/data/ # 관리자용 샘플 데이터
-│ ├── src/
-│ │ ├── assets/images/ # 이미지 리소스
-│ │ ├── components/ # 공용 UI 컴포넌트
-│ │ ├── pages/ # 사용자 페이지
-│ │ ├── admin/ # 관리자 페이지
-│ │ │ ├── components/ # 관리자 전용 컴포넌트
-│ │ │ ├── pages/ # 관리자 전용 페이지
-│ │ │ └── layout/ # 관리자 레이아웃
-│ │ ├── routes/ # 라우팅 설정
-│ │ ├── context/ # 전역 상태 관리
-│ │ ├── api/ # Axios 인스턴스
-│ │ ├── css/ # 스타일시트
-│ │ ├── App.jsx # 앱 루트
-│ │ ├── Layout.jsx # 기본 레이아웃
-│ │ ├── main.jsx # 엔트리 포인트
-│ │ └── index.css
-│ ├── .env
-│ ├── index.html
-│ ├── package.json
-│ ├── vite.config.js
-│ └── yarn.lock
+staypick_back/
+├── controller/api/    # 사용자/관리자 API 컨트롤러
+├── dto/               # 요청/응답 DTO
+├── entity/            # JPA 엔티티
+├── repository/        # JPA 리포지토리
+├── service/           # 비즈니스 로직
+├── security/          # JWT 기반 보안 구성
+└── util/              # 유틸 클래스
 ```
 
 ---
@@ -202,117 +97,61 @@ staypick/
 ## 🚀 실행 방법
 
 ### 1. 프론트엔드 환경 변수 (`.env`)
-
 ```env
-VITE_KAKAO_KEY=카카오 개발자 api 키
-VITE_NAVER_CLIENT_ID=네이버 개발자 client 키
+VITE_KAKAO_KEY=카카오 api 키
+VITE_NAVER_CLIENT_ID=네이버 client ID
 VITE_NAVER_REDIRECT_URI=http://localhost:5173/login
-VITE_NAVER_CLIENT_SECRET=네이버 개발자 secret 키
-REACT_APP_API_URL=http://localhost:8081
-VITE_TOSS_CLIENT_KEY=토스 개발자 client 키
+VITE_NAVER_CLIENT_SECRET=네이버 secret
+VITE_TOSS_CLIENT_KEY=토스 테스트 키
 ```
 
 ### 2. 백엔드 설정 (`application.yml`)
-
 ```yaml
 server:
   port: 8081
-  servlet:
-    encoding:
-      charset: UTF-8
-      enabled: true
-      force: true
 
 spring:
   datasource:
-    url: DB URL
-    username: DB 유저네임
-    password: DB 비밀번호
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
+    url: jdbc:mysql://localhost:3306/staypick
+    username: [DB 유저명]
+    password: [DB 비밀번호]
   jpa:
     hibernate:
-      ddl-auto: update  # 운영 환경에서는 주의 필요
+      ddl-auto: update
     show-sql: true
     properties:
       hibernate:
         format_sql: true
-
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: gmail 아이디
-    password: gmail 앱 비밀번호(gmail 비밀번호 아님)
-    protocol: smtp
-    default-encoding: UTF-8
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-
-jwt:
-  secret: JWT 비밀키
-  expiration-time: 86400000 # 1일 (밀리초 단위)
-
-kakao:
-  api:
-    key: 카카오 개발자 api 키
-
-naver:
-  client-id: 네이버 개발자 client 키
-  client-secret: 네이버 개발자 secret 키
-
-toss:
-  secret:
-    key: 토스 개발자 client 키
-
 ```
 
-### 3. 실행 절차
+### 3. 실행 순서
 
-#### 1. 백엔드 실행
-
-- StaypickBackApplicaiton.java를 통해 실행
-
-#### 2. 프론트엔드 실행
-
-```powershell
-npm run dev
-```
+1. `staypick_back` → StaypickBackApplication 실행 (백엔드)
+2. `staypick_front` → `npm run dev` 또는 `yarn dev` 실행 (프론트)
 
 ### 4. 접속 URL
-
 - 프론트엔드: http://localhost:5173
 - 백엔드 API: http://localhost:8081
 
 ---
 
-## 📝 향후 개발 예정
+## 🛠️ 향후 개발 예정 기능
 
 - 모바일 반응형 UI 개선
-- 숙소 관리자 전용 회원가입 추가(진행 중)
-- 회원가입시 이메일 인증 추가
-- 숙소 리스트 부분 숙소별 최소 가격 출력되게 수정
-- 추천 숙소 알고리즘 추가
-- 숙소별 태그 추가
-- 쿠폰 출력 오류 추가(진행 중)
-- 마이페이지 로그인 기록 추가
-- 마이페이지 회원 탈최 추가
-- 결제하기 버튼 누른 이후의 페이지 뒤로가기 버튼 추가
-- 결제 중단시 숙소 정보 페이지로 이동하는 버튼 추가
-- 결제 실패 안정화
-- 관리자 페이지 숙소 및 객실 정보 수정 부분 이미지 변경 기능 추가
-- 관리자 페이지 기간 관리 페이지 주말이나 공휴일은 자동으로 처리되게 수정
-- 다국어 지원
-- 배포 환경 안정화
+- 관리자 숙소별 예약 통계 시각화 강화
+- 사업자 전용 회원가입 페이지 추가
+- 숙소 추천 알고리즘 적용 (리뷰 기반)
+- 다국어 다중 언어 지원 (i18n)
+- 관리자 페이지 이미지 관리 기능 보강
+- 마이페이지 회원 탈퇴 및 로그인 기록 표시
+- 결제 실패 / 중단 시 UX 개선 흐름 처리
 
 ---
 
 ## 📮 문의
 
-- 개발자 이메일: staypicktest@gmail.com
+- GitHub: [github.com/kkkk-270](https://github.com/kkkk-270)
+- 이메일: jinjaegim60@gmail.com
 
 ---
 
@@ -320,15 +159,7 @@ npm run dev
 
 MIT 라이선스 (MIT License)
 
-저작권 (c) 2025 ca1yp2
+본 프로젝트는 학습 및 팀 프로젝트 포트폴리오 용도로 제작되었습니다.  
+상업적 이용은 제한될 수 있으며, 소스코드는 자유롭게 참고하실 수 있습니다.
 
-본 프로젝트는 학습 및 팀 프로젝트 용도로 제작되었습니다. 어떤 보증도 제공되지 않습니다.  
-소프트웨어를 자유롭게 사용할 수 있으나, 상업적 사용은 제한될 수 있습니다.
-
-MIT License
-
-This project is licensed under the MIT License,  
-with the following additional notice:
-
-> 📌 This software was created for **educational and team portfolio purposes only**,  
-> and **not intended for commercial use**
+> 본 저장소는 김진재 개인 작업 중심의 내용을 정리한 포트폴리오용 Fork 버전입니다.
